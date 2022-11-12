@@ -13,3 +13,12 @@ def products():
         "<li>%s</li>" % product for product in product_list
     )
     return "<ul>%s</ul>" % bullet_list
+
+@app.route("/aboutme")
+def aboutme():
+    i = {"first_name": "Daravy",
+    "last_name": "Meas",
+    "hobby": "Learning"}
+
+    return i
+    
